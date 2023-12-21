@@ -3,8 +3,8 @@
 namespace App\Http\Requests;
 
 use App\Enums\EmploymentType;
-use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateJobRequest extends FormRequest
 {

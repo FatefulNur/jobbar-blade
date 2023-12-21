@@ -37,7 +37,7 @@ class UserFactory extends Factory
      */
     public function admin(): static
     {
-        return $this->state(fn(array $attributes) => [
+        return $this->state(fn (array $attributes) => [
             'name' => 'Nurun Nabi',
             'email' => 'nur@admin.com',
         ]);

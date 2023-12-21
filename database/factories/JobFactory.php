@@ -26,7 +26,7 @@ class JobFactory extends Factory
             'apply_url' => fake()->url(),
             'company_logo' => fake()->imageUrl(52, 52),
             'description' => fake()->realText(600),
-            'salary' => Number::currency(fake()->numberBetween(1000, 5000)) . ' - ' . Number::currency(fake()->numberBetween(1000, 5000)),
+            'salary' => Number::currency(fake()->numberBetween(1000, 5000)).' - '.Number::currency(fake()->numberBetween(1000, 5000)),
         ];
     }
 }

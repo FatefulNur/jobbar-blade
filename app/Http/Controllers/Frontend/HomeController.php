@@ -13,6 +13,7 @@ class HomeController extends Controller
         $jobs = Job::when($request->search, function ($query) use ($request) {
             return $query->where('title', 'like', "%{$request->search}%");
         })->latest()->get();
+
         return view('frontend.home', compact('jobs'));
     }
 }
